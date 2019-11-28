@@ -2,13 +2,12 @@
 <html lang="en-US">
   <script>
     int quarks = 0;
-    function quarksUp(quarks) {
+    function quarksUp() {
       quarks++;
-      return quarks;
     }
   </script>
   <body>
     <p id="quarks">Quarks: 0</p>
-    <button type="button" onclick="document.getElementById("quarks").innerHTML = "Quarks: " + quarksUp(quarks)">Make a quark</button>
+    <button type="button" onclick="document.getElementById("quarks").innerHTML = "Quarks: " + quarksUp()">Make a quark</button>
   </body>
 </html>
