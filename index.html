@@ -5,14 +5,15 @@
       <p id="quarks"></p>
       <button type="button" onclick="quarksUp(quarks)">Make a quark</button>
       
-      <script>
-      var quarks = 0;
-      document.getElementById("quarks").innerHTML = "Quarks: " + quarks;
-      function quarksUp(quarks) {
-        quarks++;
-        document.getElementById("quarks").innerHTML = "Quarks: " + quarks;
-        return quarks;
-      }
-      </script>
+
     </body>
+    <script>
+    var quarks = 0;
+    document.getElementById("quarks").innerHTML = "Quarks: " + quarks;
+    function quarksUp(quarks) {
+      quarks++;
+      document.getElementById("quarks").innerHTML = "Quarks: " + quarks;
+      return quarks;
+    }
+    </script>
   </html>
