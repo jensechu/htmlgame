@@ -2,6 +2,9 @@
 <html lang="en-US">
   <html>
     <body>
+      <p>Quarks: </p><p id="quarks"></p>
+      <button type="button" onclick="quarksUp">Make a quark</button>
+      
       <script>
       var quarks = 0;
       document.getElementById("quarks").innerHTML = quarks;
@@ -9,7 +12,5 @@
         quarks = quarks + 1;
       }
       </script>
-      <p>Quarks: </p><p id="quarks"></p>
-      <button type="button" onclick="quarksUp">Make a quark</button>
     </body>
   </html>
