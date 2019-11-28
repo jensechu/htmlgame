@@ -4,10 +4,11 @@
     int quarks = 0;
     function quarksUp() {
       window.quarks++;
+      document.getElementById("quarks").innerHTML = "Quarks: " + quarks;
     }
   </script>
   <body>
     <p id="quarks">Quarks: 0</p>
-    <button type="button" onclick="document.getElementById("quarks").innerHTML = "Quarks: " + quarksUp()">Make a quark</button>
+    <button type="button" onclick="quarksUp()">Make a quark</button>
   </body>
 </html>
