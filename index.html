@@ -4,12 +4,11 @@
     int quarks = 0;
     function quarksUp(quarks) {
       quarks++;
-      var quarkCount = "Quarks: " + quarks;
-      return quarkCount;
+      return quarks;
     }
   </script>
   <body>
     <p id="quarks">Quarks: 0</p>
-    <button type="button" onclick="document.getElementById("quarks").innerHTML = quarksUp(quarks)">Make a quark</button>
+    <button type="button" onclick="document.getElementById("quarks").innerHTML = "Quarks: " + quarksUp(quarks)">Make a quark</button>
   </body>
 </html>
