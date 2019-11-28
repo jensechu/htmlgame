@@ -8,9 +8,10 @@
       <script>
       var quarks = 0;
       document.getElementById("quarks").innerHTML = quarks;
-      function quarksUp() {
+      function quarksUp(var quarks) {
         quarks = quarks + 1;
         document.getElementById("quarks").innerHTML = quarks;
+        return quarks;
       }
       </script>
     </body>
