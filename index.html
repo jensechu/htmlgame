@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <body onload="loadFunc()">
+  <body onload="loadFunction()">
     <p id="quarks">Quarks: 0</p>
     <button onclick="quarksUp()">Make a quark</button>
+    <script>
+      function loadFunction() {
+        int window.quarks = 0;
+      }
+      function quarksUp() {
+        window.quarks++;
+        document.getElementById("quarks").innerHTML = "Quarks: " + window.quarks;
+      }
+    </script>
   </body>
-  <script>
-    loadFunction() {
-      int window.quarks = 0;
-    }
-    function quarksUp() {
-      window.quarks++;
-      document.getElementById("quarks").innerHTML = "Quarks: " + window.quarks;
-    }
-  </script>
 </html>
