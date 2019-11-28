@@ -4,7 +4,12 @@
     <body>
       <script>
       var quarks = 0;
+      document.getElementById("quarks").innerHTML = quarks;
+      function quarksUp() {
+        quarks = quarks + 1;
+      }
       </script>
-      <button>Make a quark</button>
+      <p>Quarks: </p><p id="quarks"></p>
+      <button type="button" onclick="quarksUp">
     </body>
   </html>
