@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <html>
-    <body>
-      <p id="quarks"></p>
-      <button type="button" onclick="quarksUp(quarks)">Make a quark</button>
-      
-
-    </body>
-    <script>
-    var quarks = 0;
+  <body>
+    <p id="quarks"></p>
+    <button type="button" onclick="quarksUp(quarks)">Make a quark</button>
+  </body>
+  <script>
+  var quarks = 0;
+  document.getElementById("quarks").innerHTML = "Quarks: " + quarks;
+  </script>
+  <script>
+  function quarksUp(quarks) {
+    quarks++;
     document.getElementById("quarks").innerHTML = "Quarks: " + quarks;
-    </script>
-    <script>
-    function quarksUp(quarks) {
-      quarks++;
-      document.getElementById("quarks").innerHTML = "Quarks: " + quarks;
-      return quarks;
-    }
-    </script>
-  </html>
+    return quarks;
+  }
+  </script>
+</html>
